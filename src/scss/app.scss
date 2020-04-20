@@ -1,0 +1,15 @@
+/* DIVIDO I COMMENTI PER ORGANIZZARE IL CSS VISIBILMENTE */
+/* VARIABLES */
+@import "_variables.scss";
+/* MIXIN */
+@import "_mixins.scss";
+/* RESET */
+@import "_reset.scss";
+/* COMMON */
+@import "_common.scss";
+/* HEADER */
+@import 'partials/_header'; // Questo commento non è visibile in css
+/* MAIN */
+@import 'partials/_main';
+/* FOOTER */
+@import 'partials/_footer';
