@@ -15,6 +15,7 @@ main {
     .container-main-cards {
       width: 100%;
       @include display-flex(center, center, row);
+      flex-wrap: wrap;
       .card {
         width: calc(100% / 8 );
         height: 300px;

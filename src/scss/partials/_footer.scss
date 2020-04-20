@@ -4,6 +4,8 @@ footer {
   background-color: $bg_color_primary;
   position: fixed;
   bottom: 0;
+  border-top: 2px solid $bg_color_secondary;
+  z-index: 999;
   @include display-flex(center, center, row);
   ul {
     @include display-flex(center, center, row);
