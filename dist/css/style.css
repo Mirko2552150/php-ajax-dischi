@@ -24,6 +24,7 @@
 
 body {
   font-family: "Roboto";
+  background-color: #f8f8f8;
 }
 
 /* HEADER */
@@ -32,6 +33,8 @@ header {
   width: 100vw;
   height: 90px;
   background-color: #3c4043;
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,5 +56,105 @@ header .header-box-img img {
 
 /* MAIN */
 
+main {
+  background-color: #f8f8f8;
+  width: 100vw;
+  padding-top: 90px;
+  overflow-y: scroll;
+}
+
+main .container-main {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+main .container-main .container-main-title {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+main .container-main .container-main-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+main .container-main .container-main-cards .card {
+  width: calc(100% / 8 );
+  height: 300px;
+  border-radius: 5px;
+  background-color: #3c4043;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main .container-main .container-main-cards .card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+main .container-main .container-main-cards .card .card-img {
+  width: 100%;
+  height: 65%;
+  padding: 10px;
+}
+
+main .container-main .container-main-cards .card .card-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+main .container-main .container-main-cards .card .card-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  height: 40%;
+}
+
+main .container-main .container-main-cards .card .card-description p {
+  text-align: center;
+}
+
 /* FOOTER */
+
+footer {
+  width: 100vw;
+  height: 90px;
+  background-color: #3c4043;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+footer ul li {
+  padding: 6px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+footer ul li:hover {
+  text-decoration: underline;
+}
 

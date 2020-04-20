@@ -1,0 +1,20 @@
+footer {
+  width: 100vw;
+  height: 90px;
+  background-color: $bg_color_primary;
+  position: fixed;
+  bottom: 0;
+  @include display-flex(center, center, row);
+  ul {
+    @include display-flex(center, center, row);
+    li {
+      padding: 6px;
+      list-style-type: none;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+}
