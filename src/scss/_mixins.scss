@@ -1,0 +1,31 @@
+// @mixin text-card {
+//     width: 100%;
+//     height: 50%;
+//     font-size: 20px;
+//     display: flex;
+//     align-items: center;
+//     p {
+//         text-align: center;
+//     }
+// }
+//
+// @mixin bottone($altezza, $larghezza) {
+//     width: $larghezza;
+//     height: $altezza;
+//     border-radius: 5px;
+//     background-color: $color_sec;
+//     border: 1px solid $color_sec;
+//     cursor: pointer;
+//     color: white;
+//     &:hover {
+//         background-color: #233569;
+//     }
+// }
+
+@mixin display-flex($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+
+}

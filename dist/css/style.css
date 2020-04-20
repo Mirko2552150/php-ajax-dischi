@@ -28,6 +28,29 @@ body {
 
 /* HEADER */
 
+header {
+  width: 100vw;
+  height: 90px;
+  background-color: #3c4043;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+header .header-box-img {
+  width: 70px;
+  height: 100%;
+}
+
+header .header-box-img:hover {
+  transform: scale(1.05);
+}
+
+header .header-box-img img {
+  width: 100%;
+}
+
 /* MAIN */
 
 /* FOOTER */

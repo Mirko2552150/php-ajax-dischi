@@ -1,0 +1,17 @@
+header {
+  width: 100vw;
+  height: 90px;
+  background-color: $bg_color_primary;
+  @include display-flex(center, center, row);
+  .header-box-img {
+    width: 70px;
+    height: 100%;
+    &:hover {
+      transform: scale(1.05);
+    }
+    img {
+      width: 100%;
+      
+    }
+  }
+}
