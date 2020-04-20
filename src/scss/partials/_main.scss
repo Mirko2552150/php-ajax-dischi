@@ -1,6 +1,5 @@
 main {
-  background-color: $bg_color_secondary;
-  width: 100vw;
+  background-color: $font_color_primary;
   padding: 90px 0;
   overflow-y: scroll;
   .container-main {
@@ -13,7 +12,6 @@ main {
 
     }
     .container-main-cards {
-      width: 100%;
       @include display-flex(center, center, row);
       flex-wrap: wrap;
       .card {
@@ -21,7 +19,7 @@ main {
         height: 300px;
         border-radius: 5px;
         background-color: $bg_color_primary;
-        margin: 5px;
+        margin: 10px;
         @include display-flex(center, center, column);
         &:hover {
           transform: scale(1.1);

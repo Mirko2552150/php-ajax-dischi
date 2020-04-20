@@ -1,9 +1,11 @@
 footer {
+  font-size: 12px;
   width: 100vw;
   height: 90px;
   background-color: $bg_color_primary;
   position: fixed;
   bottom: 0;
+  left: 0;
   border-top: 2px solid $bg_color_secondary;
   z-index: 999;
   @include display-flex(center, center, row);

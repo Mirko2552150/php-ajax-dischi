@@ -6,8 +6,6 @@
 
 /* RESET */
 
-/* MARGIN E CLEARFIX */
-
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +22,6 @@
 
 body {
   font-family: "Roboto";
-  background-color: #f8f8f8;
 }
 
 /* HEADER */
@@ -35,6 +32,7 @@ header {
   background-color: #3c4043;
   position: fixed;
   top: 0;
+  left: 0;
   border-bottom: 2px solid #f8f8f8;
   z-index: 999;
   display: flex;
@@ -60,7 +58,6 @@ header .header-box-img img {
 
 main {
   background-color: #f8f8f8;
-  width: 100vw;
   padding: 90px 0;
   overflow-y: scroll;
 }
@@ -80,7 +77,6 @@ main .container-main .container-main-title {
 }
 
 main .container-main .container-main-cards {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,7 +89,7 @@ main .container-main .container-main-cards .card {
   height: 300px;
   border-radius: 5px;
   background-color: #3c4043;
-  margin: 5px;
+  margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,11 +129,13 @@ main .container-main .container-main-cards .card .card-description p {
 /* FOOTER */
 
 footer {
+  font-size: 12px;
   width: 100vw;
   height: 90px;
   background-color: #3c4043;
   position: fixed;
   bottom: 0;
+  left: 0;
   border-top: 2px solid #f8f8f8;
   z-index: 999;
   display: flex;

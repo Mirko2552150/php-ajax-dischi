@@ -4,6 +4,7 @@ header {
   background-color: $bg_color_primary;
   position: fixed;
   top: 0;
+  left: 0;
   border-bottom: 2px solid $bg_color_secondary;
   z-index: 999;
   @include display-flex(center, center, row);
