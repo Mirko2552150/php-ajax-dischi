@@ -61,7 +61,7 @@ header .header-box-img img {
 main {
   background-color: #f8f8f8;
   width: 100vw;
-  padding-top: 90px;
+  padding: 90px 0;
   overflow-y: scroll;
 }
 
