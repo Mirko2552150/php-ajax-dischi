@@ -1,4 +1,5 @@
 <?php
+  // per divere tutte le sezioni facciamo un file "database" e un altro file che prendera quei dati e li passera tramite JSON
   $albums = [
     [
       'title' => 'Titolo Uno',
@@ -36,8 +37,6 @@
       'year' => '2004',
       'img' => '_sei'
     ]
-  ]
-
-
+  ];
 
  ?>

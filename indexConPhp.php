@@ -1,44 +1,6 @@
 
 <?php
-// UTILIZZO PHP DENTRO IL FILE INDEX
-  $albums = [
-    [
-      'title' => 'Titolo Uno',
-      'artist' => 'Queen Uno',
-      'year' => '1999',
-      'img' => '_uno',
-    ],
-    [
-      'title' => 'Titolo Due',
-      'artist' => 'Queen Due',
-      'year' => '2000',
-      'img' => '_due',
-    ],
-    [
-      'title' => 'Titolo Tre',
-      'artist' => 'Queen Tre',
-      'year' => '2001',
-      'img' => '_tre',
-    ],
-    [
-      'title' => 'Titolo Quattro',
-      'artist' => 'Queen Quattro',
-      'year' => '2002',
-      'img' => '_quattro',
-    ],
-    [
-      'title' => 'Titolo Cinque',
-      'artist' => 'Queen Cinque',
-      'year' => '2003',
-      'img' => '_cinque',
-    ],
-    [
-      'title' => 'Titolo Sei',
-      'artist' => 'Queen Sei',
-      'year' => '2004',
-      'img' => '_sei',
-    ],]
-
+  include 'data.php'; // inserisoco un file esterno con i miei dati PHP
 ?>
 
 <!DOCTYPE html>
@@ -63,38 +25,18 @@
             <h2>SELEZIONE ALBUM MUSICALI</h2>
           </div>
           <div class="container-main-cards">
-             <?php foreach ($albums as $key => $value): ?>
+             <?php foreach ($albums as $key => $album): ?>
                <div class="card">
                  <div class="card-img">
-                   <img src="img/album<?php echo $value[img] ?>.jpg" alt="img/album_uno">
+                   <img src="img/album<?php echo $album['img'] ?>.jpg" alt="img/album_uno">
                  </div>
                  <div class="card-description">
-                   <p><span>Titolo Album: </span><span><?php echo $value[title] ?></span></p>
-                   <p><span>Artista: </span><span></span><?php echo $value[artist] ?></p>
-                   <p><span>Anno: </span><span><?php echo $value[year] ?></span></p>
+                   <p><span>Titolo Album: </span><span><?php echo $album['title'] ?></span></p>
+                   <p><span>Artista: </span><span></span><?php echo $album['artist'] ?></p>
+                   <p><span>Anno: </span><span><?php echo $album['year'] ?></span></p>
                  </div>
                </div>
              <?php endforeach; ?>
-            <!-- <div class="card">
-              <div class="card-img">
-                <img src="img/album_uno.jpg" alt="img/album_uno">
-              </div>
-              <div class="card-description">
-                <p><span>Titolo Album: </span><span>AAAA</span></p>
-                <p><span>Artista: </span><span></span>Queen</p>
-                <p><span>Anno: </span><span>1999</span></p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-img">
-                <img src="img/album_uno.jpg" alt="img/album_uno">
-              </div>
-              <div class="card-description">
-                <p><span>Titolo Album: </span><span>AAAA</span></p>
-                <p><span>Artista: </span><span></span>Queen</p>
-                <p><span>Anno: </span><span>1999</span></p>
-              </div>
-            </div> -->
           </div>
         </div>
       </main>

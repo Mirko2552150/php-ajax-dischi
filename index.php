@@ -1,8 +1,3 @@
-
-<?php
-  include 'data.php'; // inserisoc un file esterno con i miei dati PHP
-?>
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
@@ -25,38 +20,7 @@
             <h2>SELEZIONE ALBUM MUSICALI</h2>
           </div>
           <div class="container-main-cards">
-             <?php foreach ($albums as $key => $value): ?>
-               <div class="card">
-                 <div class="card-img">
-                   <img src="img/album<?php echo $value[img] ?>.jpg" alt="img/album_uno">
-                 </div>
-                 <div class="card-description">
-                   <p><span>Titolo Album: </span><span><?php echo $value[title] ?></span></p>
-                   <p><span>Artista: </span><span></span><?php echo $value[artist] ?></p>
-                   <p><span>Anno: </span><span><?php echo $value[year] ?></span></p>
-                 </div>
-               </div>
-          
-            <!-- <div class="card">
-              <div class="card-img">
-                <img src="img/album_uno.jpg" alt="img/album_uno">
-              </div>
-              <div class="card-description">
-                <p><span>Titolo Album: </span><span>AAAA</span></p>
-                <p><span>Artista: </span><span></span>Queen</p>
-                <p><span>Anno: </span><span>1999</span></p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-img">
-                <img src="img/album_uno.jpg" alt="img/album_uno">
-              </div>
-              <div class="card-description">
-                <p><span>Titolo Album: </span><span>AAAA</span></p>
-                <p><span>Artista: </span><span></span>Queen</p>
-                <p><span>Anno: </span><span>1999</span></p>
-              </div>
-            </div> -->
+
           </div>
         </div>
       </main>
@@ -73,17 +37,16 @@
       <script id="template-card" type="text/x-handlebars-template">
         <div class="card">
           <div class="card-img">
-            <img src="img/album_{{cover}}" alt="img/album_uno">
+            <img src="img/album{{cover}}.jpg" alt="img/album{{cover}}.jpg">
           </div>
           <div class="card-description">
             <p><span>Titolo Album: </span><span>{{titolo}}</span></p>
-            <p><span>Artista: </span><span></span>{{Artista}}</p>
+            <p><span>Artista: </span><span></span>{{artista}}</p>
             <p><span>Anno: </span><span>{{anno}}</span></p>
           </div>
         </div>
       </script>
 
-
-      <script src="js/main.js" charset="utf-8"></script>
+      <script src="dist/js/main.js" charset="utf-8"></script>
     </body>
 </html>
