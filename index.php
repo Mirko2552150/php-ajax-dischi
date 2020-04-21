@@ -37,7 +37,7 @@
       <script id="template-card" type="text/x-handlebars-template">
         <div class="card">
           <div class="card-img">
-            <img src="img/album{{cover}}.jpg" alt="img/album{{cover}}.jpg">
+            <img src="img/album{{cover}}" alt="img/album{{cover}}">
           </div>
           <div class="card-description">
             <p><span>Titolo Album: </span><span>{{titolo}}</span></p>

@@ -58,7 +58,7 @@ header .header-box-img img {
 
 main {
   background-color: silver;
-  padding: 90px 0;
+  padding: 100px 0;
   overflow-y: scroll;
   min-height: 100vh;
   width: 100%;
@@ -87,7 +87,7 @@ main .container-main .container-main-cards {
 }
 
 main .container-main .container-main-cards .card {
-  width: calc(100% / 8 );
+  width: 200px;
   height: 300px;
   border-radius: 5px;
   background-color: #3c4043;
